@@ -1,0 +1,13 @@
+services:
+
+  oracle-db:
+    image: gvenzl/oracle-free:latest
+    container_name: oracle-db
+
+    ports:
+      - "1521:1521"
+
+    environment:
+      ORACLE_PASSWORD: oracle
+      APP_USER: app
+      APP_USER_PASSWORD: app
