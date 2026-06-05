@@ -51,9 +51,7 @@ sql/
 Subir um Oracle Free via Docker, se precisar:
 
 ```bash
-docker run -d --name oracle-free -p 1521:1521 \
-  -e ORACLE_PASSWORD=senha123 \
-  gvenzl/oracle-free
+docker-compose up -d
 ```
 
 ### 2. Banco de dados
